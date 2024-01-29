@@ -4,7 +4,10 @@
 
 extern Tulip::Application* Tulip::CreateApplication();
 
-int main(int argc, char** argv) {
+int main(int argc, char** argv) 
+{
+	Tulip::Log::Init();
+
 	auto app = Tulip::CreateApplication();
 	app->Run();
 	delete app;
